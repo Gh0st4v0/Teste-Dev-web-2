@@ -66,7 +66,7 @@ class User {
       }
   
       // Prevent setting 'master' user level
-      if (this.userLevel === 'master') {
+      if (this.userLevel !== 'master') {
         console.error('Cannot change the user level of a master user.');
         return;
       }
